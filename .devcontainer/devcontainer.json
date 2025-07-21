@@ -7,7 +7,6 @@
       "vscode": {
         "extensions": [
           "usernamehw.errorlens",
-          "MS-CEINTL.vscode-language-pack-zh-hans",
           "ms-vscode.cmake-tools",
           "twxs.cmake",
           "IBM.output-colorizer",
