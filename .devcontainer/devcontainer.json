@@ -1,0 +1,21 @@
+// .devcontainer/devcontainer.json
+{
+    "name": "Algorithm Codespace",
+    "image": "mcr.microsoft.com/devcontainers/cpp:ubuntu", // 可换为任意镜像
+    "postCreateCommand": "echo 初始化完成",
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "usernamehw.errorlens",
+          "MS-CEINTL.vscode-language-pack-zh-hans",
+          "ms-vscode.cmake-tools",
+          "twxs.cmake",
+          "IBM.output-colorizer",
+          "yzhang.markdown-all-in-one",
+          "mhutchie.git-graph",
+          "donjayamanne.githistory",
+          "ms-vscode.cpptools-extension-pack"
+        ]
+      }
+    }
+  }
