@@ -1,5 +1,4 @@
 #include <iostream>
-#include <windows.h>
 #include <random>
 
 int *randomArray(int size, int v);
@@ -94,7 +93,6 @@ void insertSort(int arr[], int arr_size) {
 }
 
 int main(int argc, char *argv[]) {
-    SetConsoleOutputCP(65001);
     // 创建随机数生成器
     std::random_device rd; // 用于生成真正随机的种子
     std::mt19937 gen(rd()); // 使用 Mersenne Twister 伪随机数生成器
@@ -106,7 +104,7 @@ int main(int argc, char *argv[]) {
     int testTimes = 5000;
     // 定义随机数范围，例如 1 到 100
     std::uniform_int_distribution<int> distrib(1, N);
-    std::cout << "测试开始" << std::endl;
+    std::cout << "Testing begins" << std::endl;
     for (int i = 0; i < testTimes; i++) {
         int n = distrib(gen);
         int *arr = randomArray(n, V);
@@ -117,9 +115,9 @@ int main(int argc, char *argv[]) {
         bubbleSort(array_2, n);
         insertSort(array_3, n);
         if (!sameArray(array_1, array_2, n) || !sameArray(array_1, array_3, n)) {
-            std::cout << "出错了" << std::endl;
+            std::cout << "Error!!!" << std::endl;
         }
     }
-    std::cout << "测试结束" << std::endl;
+    std::cout << "end of test" << std::endl;
     return 0;
 }

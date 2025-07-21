@@ -1,5 +1,4 @@
 #include <iostream>
-#include <windows.h>
 
 void swap(int array[], int index1, int index2);
 
@@ -34,10 +33,9 @@ void print(const int array[], int array_size) {
 }
 
 int main(int argc, char *argv[]) {
-    SetConsoleOutputCP(65001);
     int array[] = {1, 5, 9, 3, 8, 4, 6};
     print(array, std::size(array));
-    std::cout << "排序后" << std::endl;
+    std::cout << "after sorting" << std::endl;
     bubbleSort(array, std::size(array));
     print(array, std::size(array));
 }

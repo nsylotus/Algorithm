@@ -1,5 +1,4 @@
 #include <iostream>
-#include <windows.h>
 
 // 二分查找找数据是否存在于数组中
 int binarySearch(const int arr[], int target, int arr_size);
@@ -88,7 +87,6 @@ int findPeakElement(const int arr[], int arr_size) {
 }
 
 int main(int argc, char *argv[]) {
-    SetConsoleOutputCP(65001);
     int arr[] = {1, 2, 6, 8, 9, 13, 15, 17, 19, 21, 23};
     std::cout << binarySearch(arr, 6, std::size(arr)) << std::endl;
     std::cout << findLeft(arr, 7, std::size(arr)) << std::endl;

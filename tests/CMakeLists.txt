@@ -1,7 +1,7 @@
  include(FetchContent)
 
 # 下载 GoogleTest
- FetchContent_Declare(
+FetchContent_Declare(
   googletest
   URL https://github.com/google/googletest/archive/refs/tags/v1.17.0.zip
 )
